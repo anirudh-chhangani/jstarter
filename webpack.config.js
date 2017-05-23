@@ -1,9 +1,7 @@
-var path = require("path")
-
 module.exports = {
-    entry: path.resolve(__dirname + '/src/index.js'),
+    entry: __dirname + '/src/index.js',
     output: {
-        path: path.resolve(__dirname + '/bin'),
+        path: __dirname + '/bin',
         filename: 'app.js',
     },
     module: {

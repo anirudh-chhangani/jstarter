@@ -1,4 +1,4 @@
-import * as m from "mithril"
+var m = require("mithril")
 
 class HelloWorld {
     constructor() {
@@ -10,4 +10,4 @@ class HelloWorld {
     }
 }
 
-module.exports.HelloWorld = HelloWorld
+m.mount(document.body, new HelloWorld())
